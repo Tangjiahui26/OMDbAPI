@@ -8,7 +8,7 @@ library(tidyverse)
 
 #Create a function to search movie by name using OMDbAPI
 Search_by_name <- function(name, page = 1){
-    query_string <- list(s = name, page = page, type = "movie", apikey=YOURAPIKEY)
+    query_string <- list(s = name, page = page, type = "movie", apikey="YOURAPIKEY")
     #query_string <- glue("http://www.omdbapi.com/?s={name}&apikey=YOURAPIKEY&page={page}")
     movie <- GET("http://www.omdbapi.com/", query = query_string)
     
