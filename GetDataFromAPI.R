@@ -8,8 +8,8 @@ library(tidyverse)
 
 #Create a function to search movie by name using OMDbAPI
 Search_by_name <- function(name, page = 1){
-    query_string <- list(s = name, page = page, type = "movie", apikey="4f56ae0f")
-    #query_string <- glue("http://www.omdbapi.com/?s={name}&apikey=4f56ae0f&page={page}")
+    query_string <- list(s = name, page = page, type = "movie", apikey=YOURAPIKEY)
+    #query_string <- glue("http://www.omdbapi.com/?s={name}&apikey=YOURAPIKEY&page={page}")
     movie <- GET("http://www.omdbapi.com/", query = query_string)
     
     if(movie$status_code != 200){
@@ -32,7 +32,7 @@ Search_by_name <- function(name, page = 1){
 #Create a function to get ratings when giving IMDb IDs as input.
 Get_Ratings <- function(ID){
     
-    query_string <- glue("http://www.omdbapi.com/?i={ID}&apikey=4f56ae0f")
+    query_string <- glue("http://www.omdbapi.com/?i={ID}&apikey=YOURAPIKEY")
     movie <- GET(query_string)
     
     if(movie$status_code != 200){

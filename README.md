@@ -4,6 +4,7 @@ Homework10 for STAT547M
 ## About this project
 
 ***This project is one homework for [STAT547](http://stat545.com/index.html)***
+***I did not push my APIKEY to Github because of security, so Remember to change`YOURAPIKEY`if you want to build this project!!!***
 
 I used [OMDb API](http://www.omdbapi.com) to get some simple information about movies. Three functions were created to simplify the process:
 
