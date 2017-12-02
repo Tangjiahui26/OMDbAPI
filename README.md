@@ -9,8 +9,8 @@ I used [OMDb API](http://www.omdbapi.com) to get some simple information about m
 
 `Search_by_name()`: Search movie by name and page. We can only request for one page results every time and the`page`paramter was set as 1 by default.
 
-`Get_Ratings()`: Get the ratings of movie when giving IMDb ID as the input. The ratings include: "IMDb","RottenTomatoes","Metacritic".
+`Get_Ratings()`: Get the ratings of movie when giving IMDb ID as the input. The ratings include: `IMDb`,`RottenTomatoes`and`Metacritic`.
 
 `Get_Ratings_By_name()`: Combine the functions above to get the ratings by giving search name and page number.
 
-If you want to know more about the project, you can see [OMDbAPI](https://github.com/Tangjiahui26/OMDbAPI/OMDbAPI.md)
+If you want to know more about the project, you can see [OMDbAPI.md](https://github.com/Tangjiahui26/OMDbAPI/blob/master/OMDbAPI.md)

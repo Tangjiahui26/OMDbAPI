@@ -5,7 +5,7 @@ date: '2017-12-01'
 output: github_document
 ---
 
-```{r}
+```{r,warning = FALSE, eval=FALSE}
 library(httr)
 library(purrr)
 library(glue)
@@ -34,13 +34,13 @@ I used [OMDb API](http://www.omdbapi.com) to get some simple information about m
 
 ## Display data and plots
 
-```{r}
+```{r,warning = FALSE, eval=FALSE}
 Batman <- read_csv("./Batman_page2.csv")
 Batman_ratings <- read_csv("./Batman_Rating_page2.csv")
 Resident_Evil <- read_csv("./Resident_Evil.csv")
 ```
 
-```{r}
+```{r,warning = FALSE, eval=FALSE}
 knitr::kable(Batman)
 knitr::kable(Batman_ratings)
 knitr::kable(Resident_Evil)
